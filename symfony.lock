@@ -317,6 +317,12 @@
     "symfony/profiler-pack": {
         "version": "v1.0.5"
     },
+    "symfony/property-access": {
+        "version": "v5.1.6"
+    },
+    "symfony/property-info": {
+        "version": "v5.1.6"
+    },
     "symfony/redis-messenger": {
         "version": "v5.1.6"
     },
@@ -333,6 +339,18 @@
             "config/packages/routing.yaml",
             "config/routes.yaml"
         ]
+    },
+    "symfony/security-core": {
+        "version": "v5.1.6"
+    },
+    "symfony/security-csrf": {
+        "version": "v5.1.6"
+    },
+    "symfony/security-guard": {
+        "version": "v5.1.6"
+    },
+    "symfony/security-http": {
+        "version": "v5.1.6"
     },
     "symfony/service-contracts": {
         "version": "v2.2.0"
