@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+       <!-- Basic Page Needs =====================================-->
+	    <meta charset="utf-8">
+	    <!-- Mobile Specific Metas ================================-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Site Title- -->
         <title>{% block title %}AZOBE.CRA{% endblock %}</title>
+        
+        <!-- CSS ====================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- IcoFonts -->
+	<link rel="stylesheet" href="css/icofonts.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owlcarousel.min.css">
+	<!-- slick -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- AZ -->
+	<link rel="stylesheet" href="css/az-style.css">
+	<!-- navigation -->
+	<link rel="stylesheet" href="css/navigation.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/colors/color-13.css">
+	<link rel="stylesheet" href="css/colors/color-15.css">
+	<!-- Responsive -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/cookies.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <section class="top-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 align-self-center md-center-item">
+					<div class="ts-temperature">
+						<i class="icon-weather"></i>
+						<span>25.8
+							<b>c</b>
+						</span>
+						<span>Libreville</span>
+
+					</div>
+
+					<ul class="ts-top-nav">
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Forums</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- end col-->
+
+				<div class="col-md-6 text-right align-self-center">
+					<!-- social-->
+					<ul class="top-social">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook-f"></i>
+							</a>
+						</li>
+						<li> 
+							<a href="#">
+								<i class="fa fa-linkedin"></i> 
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-instagram"></i>  
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-youtube-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--end col -->
+
+
+			</div>
+			<!-- end row -->
+		</div>
+	</section>
+    {% block section %}{% endblock %}
+    {% block javascripts %}{% endblock %}
     </body>
 </html>
