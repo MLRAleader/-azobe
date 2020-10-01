@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
+{% extends 'azobe_base_front.html.twig' %}
 
-{% block title %}Hello AppelProjetController!{% endblock %}
+{% block title 'Appel Projet |' ~ parent() %}
 
 {% block body %}
 <style>
@@ -12,9 +12,8 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/mlra/web/azobe/src/Controller/AppelProjetController.php'|file_link(0) }}">src/Controller/AppelProjetController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/mlra/web/azobe/templates/appel_projet/index.html.twig'|file_link(0) }}">templates/appel_projet/index.html.twig</a></code></li>
-    </ul>
+    <img src="/images/azobe_logo.png" />
+            
+            <img src="/images/Site_construction_ok.gif" />
 </div>
 {% endblock %}
