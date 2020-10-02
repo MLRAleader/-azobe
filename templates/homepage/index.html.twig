@@ -4,7 +4,7 @@
 
 {% block body %}
      {% for message in app.flashes('success') %}
-        <div class="alert alert-success" role="alert">{{ flashError }}</div>
+        <div class="alert alert-success" role="alert">{{ message }}</div>
     {% endfor %}
 
 {% endblock %}
