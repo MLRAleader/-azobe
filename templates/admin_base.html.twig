@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Basic Page Needs =====================================-->
+	    <meta charset="utf-8">
+	    <!-- Mobile Specific Metas ================================-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Site Title- -->
+        <title>{% block title %}AZOBE.CRA{% endblock %}</title>
+        
+        <!-- CSS ====================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+	<!-- IcoFonts -->
+	<link rel="stylesheet" href="{{ asset('css/icofonts.css') }}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{{ asset('css/owlcarousel.min.css') }}">
+	<!-- slick -->
+	<link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+	<!-- AZ -->
+	<link rel="stylesheet" href="{{ asset('css/az-style.css') }}">
+	<!-- navigation -->
+	<link rel="stylesheet" href="{{ asset('css/navigation.css') }}">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+	<!-- Style -->
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+	<!-- Style -->
+	<link rel="stylesheet" href="{{ asset('css/colors/color-13.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/colors/color-15.css') }}">
+	<!-- Responsive -->
+	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/cookies.css') }}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+
+         <br><br>
+
+    <h4 class="text-center font-weight-bold"><img src="{{asset('images/logo/azologo.png')}}" alt="logo AZOBE" width="100px"></h4> <br>
+
+    <h4 class="text-center font-weight-bold">Connexion</h4> <br><br>
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-12 col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+
+                <form action="" method="post">
+
+
+                    <input type="email" id="email" class="form-control form-control-lg" placeholder="example@email.com">
+                    <br>
+
+
+                    <input type="password" id="motdepasse" class="form-control form-control-lg" placeholder="Mot de passe"> <br>
+
+                    <a href="index.html">
+                        <button type="submit" class="btn btn-primary" style="width:100%;">S'identifier</button>
+                    </a>
+
+                </form>
+
+                <br>
+
+                <center><a href="motdepasse.html" style="margin: auto">Mot de passe oublié ?</a></center>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
