@@ -3,5 +3,8 @@
 {% block title 'Accueil  | ' ~ parent()%}
 
 {% block body %}
+     {% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ flashError }}</div>
+    {% endfor %}
 
 {% endblock %}

@@ -4,10 +4,12 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
  */
 class User implements UserInterface
 {
@@ -35,14 +37,9 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="string", length=64, nullable=true)
-     */
-    private $username;
-
-    /**
      * @ORM\Column(type="boolean")
      */
-    private $isActive;
+    private $isVerified = false;
 
     public function getId(): ?int
     {
@@ -122,21 +119,14 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function setUsername(?string $username): self
+    public function isVerified(): bool
     {
-        $this->username = $username;
-
-        return $this;
+        return $this->isVerified;
     }
 
-    public function getIsActive(): ?bool
+    public function setIsVerified(bool $isVerified): self
     {
-        return $this->isActive;
-    }
-
-    public function setIsActive(bool $isActive): self
-    {
-        $this->isActive = $isActive;
+        $this->isVerified = $isVerified;
 
         return $this;
     }
