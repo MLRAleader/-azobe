@@ -12,24 +12,11 @@ class AppelProjetController extends AbstractController
     /**
      * @Route("/appel/projet", name="appel_projet")
      */
-    public function index(Request $request)
+    public function index()
     {
-        // $salut = '';
-        // if($name = $request->query->get('Hello')){
-        //     $salut = printf('<h1>Bonjour    %s</h1>', htmlspecialchars($name));
-        // }
+        
         return $this->render('appel_projet/index.html.twig', [
             'controller_name' => 'AppelProjetController',
         ]);
-
-        // return new Response(<<<EOF
-        // <html>
-        //     <body>
-        //     <img src="/images/azobe_logo.png" />
-        //     $salut
-        //     <!--<img src="/images/Site_construction_ok.gif" />-->
-        //     </body>
-        // </html>
-        // EOF);
     }
 }
