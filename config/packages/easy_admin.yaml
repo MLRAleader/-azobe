@@ -1,9 +1,0 @@
-easy_admin:
-    site_name: Azobe
-
-    design:
-        menu:
-            - { route: 'homepage', label: 'Retour à Azobe', icon: 'home' }
-            - { entity: 'User', label: 'User', icon: 'user' }
-            - { entity: 'AppelProjet', label: 'AppelProjet', icon: '' }
-
