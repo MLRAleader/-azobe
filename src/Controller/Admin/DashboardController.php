@@ -32,11 +32,10 @@ class DashboardController extends AbstractDashboardController
         // yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         // // yield MenuItem::linkToCrud('The Label', 'icon class', EntityClass::class);
         return [
-            MenuItem::section('Utilisateurs', 'user', User::class),
-            MenuItem::section('Appel à projet', 'AppelProjet', AppelProjet::class),
-            MenuItem::section('Editos', 'edito', Edito::class),
-            MenuItem::section('Articles', 'article', Article::class),
-            MenuItem::section('Ressources', 'ressource', Ressource::class),
+            MenuItem::section('Utilisateurs', 'fas fa-users', User::class),
+            MenuItem::section('Appel à projet', 'fas fa-bullhorn', AppelProjet::class),
+            MenuItem::section('Editos', 'far fa-newspaper', Edito::class),
+            MenuItem::section('Articles', 'fas fa-blog', Article::class)
         ];
     }
 }
