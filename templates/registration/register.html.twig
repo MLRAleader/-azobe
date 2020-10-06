@@ -1,48 +1,40 @@
 {% extends 'azobe_base_front.html.twig' %}
 
-{% block title 'Inscription  | ' ~ parent()%}
+{% block title 'Connexion  | ' ~ parent()%}
 
 {% block registration %}
 
         {# Code du bon formulaire #}
-            <section class="block-wrapper section-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 mx-auto">
-					<div class="ts-grid-box">
-						<div class="login-page">
-							<h6 class="log-sign-title text-center mb-20">Se connecter ou <a href="inscription.html">Créer un compte ?</a></h6>
+
+        <section class="block-wrapper section-bg">
+
+            {# Message d'erreur #}
+            {% for flashError in app.flashes('verify_email_error') %}
+            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+            {% endfor %}
+            {# End Message d'erreur #}
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 mx-auto">
+						<div class="ts-grid-box">
+							<div class="login-page">
+								<h6 class="log-sign-title text-center mb-20">Se connecter ou <a href="{{path('app_register')}}">Créer un compte ?</a></h6>
 							
-							<div class="row">
-								<div class="col-xs-6 col-sm-6 col-md-6">
-								<a href="#" class="btn btn-lg btn-primary btn-fb btn-block">Facebook</a>
-								</div>
-								<div class="col-xs-6 col-sm-6 col-md-6">
-								<a href="#" class="btn btn-lg btn-info btn-block">Google</a>
-								</div>
-							</div><!-- row end -->
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+									<a href="#" class="btn btn-lg btn-primary btn-fb btn-block">Facebook</a>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+									<a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+									</div>
+								</div><!-- row end -->
 							<div class="login-or">
 								<hr class="hr-or">
 								<span class="span-or">ou</span>
 							</div>
 
-							<form role="form">
-								<div class="form-group">
-								<input type="text" class="form-control" id="inputUsernameEmail" placeholder="Nom d'utilisateur ou email">
-								</div>
-								<div class="form-group">
-								<a class="pull-right" href="#">mot de passe oublié?</a>
-								<input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
-								</div>
-								<div class="checkbox pull-right">
-								<label>
-									<input type="checkbox">
-									Souviens-toi de moi</label>
-								</div>
-								<div class="d-flex ts-submit-btn">
-									<button class="btn btn-primary">Se connecter</button>
-								</div>
-							</form>
+							
 						</div>
 					</div><!-- grid box end -->
 				</div>
@@ -55,23 +47,29 @@
 	</section>
         {# End Code du bon formulaire #}
 
+		{# <form role="form">
+            {{ form_start(registrationForm) }} #}
+                                    
+					{# <div class="form-group"> #}
+						{# <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Nom d'utilisateur ou email"> #}
+                    		{# {{ form_row(registrationForm.email) }}
+								</div>
+								<div class="form-group"> #}
+								{# <a class="pull-right" href="#">mot de passe oublié?</a> #}
+								{# <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe"> #}
+                                  {# {{ form_row(registrationForm.plainPassword, { label: 'Password'})}} #}
+								{# </div> #}
+                            
+                                {# <div class="checkbox pull-right mr-4"> #}
+                                    {# <label> #}
+                                       
+                                       {# {{ form_row(registrationForm.agreeTerms) }} #}
+                                    {# </label> #}
+								{# </div> #}
+                                {# <br> #}
+								{# <div class="d-flex  ts-submit-btn"> #}
+							{# <button class="btn btn-primary">Se connecter</button> #}
+					{# </div> #}
+			{# </form> #}
 
-
-        
-
-        {# {% for flashError in app.flashes('verify_email_error') %}
-            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-        {% endfor %}
-
-        <h1>Register</h1>
-
-        {{ form_start(registrationForm) }}
-            {{ form_row(registrationForm.email) }}
-            {{ form_row(registrationForm.plainPassword, {
-                label: 'Password'
-            }) }}
-            {{ form_row(registrationForm.agreeTerms) }}
-
-            <button type="submit" class="btn">Register</button>
-        {{ form_end(registrationForm) }} #}
 {% endblock %}
