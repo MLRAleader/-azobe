@@ -6,5 +6,1243 @@
      {% for message in app.flashes('success') %}
         <div class="alert alert-success" role="alert">{{ message }}</div>
     {% endfor %}
+{% endblock %}
+
+{% block section %}
+<!--Section 1-->
+ <section class="block-wrapper mt-15">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<div id="featured-slider" class="owl-carousel ts-overlay-style ts-featured owl-loaded">
+							
+						<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1620px, 0px, 0px); transition: all 0s ease 0s; width: 4320px;">
+                        <div class="owl-item cloned" style="width: 540px;">
+                        <div class="item" style="background-image:url({{asset('images/info/Solar_Box.jpeg')}})">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Solar Box fournisseurs des panneaux solaires au Gabon</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="images/avater/author.jpg" alt=""> Rick Moungou
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Octobre 30, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												40
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item cloned" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/info/Programme_Tef.jpg')}})">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Le programme TEF 2020 déroulé à « l’Ecole 241 »</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="images/avater/author.jpg" alt=""> Rick Moungou
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Octobre 30, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												40
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div>
+                            </div>
+                            <div class="owl-item animated owl-animated-out slideOutLeft" style="width: 540px; left: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/info/Inauguration_Villa_Gaboma.jpg')}})">
+								<a class="post-cat" href="index.html#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Inauguration de la « Villa Gaboma »</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#"><img src="images/avater/author.jpg" alt=""> Martine Noure</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												18 Décembre, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												30
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item active" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/culture/Korail_King.jpg')}})">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="publication_two.html">Exposition du graphiste Corail KING</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="{{asset('images/avater/author.jpg')}}" alt="">Paukine Ndoure
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												15 Décembre, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												29
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/info/Solar_Box.jpeg)')}}">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Solar Box fournisseurs des panneaux solaires au Gabon</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="{{asset('images/avater/author.jpg')}}" alt=""> Rick Moungou
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Octobre 30, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												40
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/info/Programme_Tef.jpg)')}}">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Le programme TEF 2020 déroulé à « l’Ecole 241 »</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="{{asset('images/avater/author.jpg')}}" alt=""> Rick Moungou
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Octobre 30, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												40
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item cloned" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/info/Inauguration_Villa_Gaboma.jpg')}})">
+								<a class="post-cat" href="index.html#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="#">Inauguration de la « Villa Gaboma »</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#"><img src="{{asset('images/avater/author.jpg')}}" alt=""> Martine Noure</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												18 Décembre, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												30
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div></div><div class="owl-item cloned" style="width: 540px;">
+                            <div class="item" style="background-image:url({{asset('images/culture/Korail_King.jpg')}})">
+								<a class="post-cat ts-orange-bg" href="#" style="background: #d72924;">A LA UNE</a>
+								<div class="overlay-post-content">
+									<div class="post-content">
+										<h2 class="post-title lg">
+											<a href="publication_two.html">Exposition du graphiste Corail KING</a>
+										</h2>
+										<ul class="post-meta-info">
+											<li class="author" id="author">
+												<a href="#">
+													<img src="{{asset('images/avater/author.jpg')}}" alt="">Paukine Ndoure
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												15 Décembre, 2019
+											</li>
+											<li class="active">
+												<i class="icon-fire"></i>
+												29
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/ Featured post end -->
+							</div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="owl-nav">
+                            <button role="presentation" class="owl-prev">
+                            <i class="fa fa-angle-left"></i>
+                            </button><button role="presentation" class="owl-next">
+                            <i class="fa fa-angle-right"></i>
+                            </button>
+                            </div>
+                            <div class="owl-dots disabled">
+                            </div>
+                            </div>
+						<!-- Featured owl carousel end-->
+					</div>
+					<!-- col end-->
+
+					<div class="col-lg-3">
+						<div class="ts-grid-box ts-grid-content">
+							<a class="post-cat ts-orange-bg" href="#">Edito du mois</a>
+							<div class="ts-post-thumb">
+								<a href="#">
+									<img class="img-fluid" src="{{asset('images/info/Edito_Mois.jpg')}}" alt="" width="140px">
+								</a>
+							</div>
+							<div class="post-content">
+								<h3 class="post-title">
+									<a href="#">Gabon que sais-tu de ta culture?</a>
+								</h3>
+								<span class="post-date-info">
+									<i class="fa fa-clock-o"></i>
+									20 Décembre 2019
+								</span>
+							</div>
+						</div>
+						<!-- ts single post item end-->
+						<div class="ts-grid-box ts-grid-content-1 ts-blue-light-heighlight">
+							<div id="grid-box" style="line-height: 68px;  height: 179px;">
+								<h3 class="post-title md">
+									<a href="index-6.html#" class="text-danger">
+										Vous êtes un acteur de la société civile? Réjoignez-nous dès aujourd'hui...
+									</a>
+								</h3>
+								<button type="button" class="btn_actions"><a href="">S'ENREGISTRER MAINTENANT</a></button>
+							</div>
+						</div>
+						<!-- Section appel à l'action -->
+					</div>
+					<!-- col end-->
+					<div class=" col-lg-3 single-post">
+						<h3 class="widget-title">Agenda</h3>	
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active post-tab-list" id="home">
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve17.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal"> EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">Programme Mini-entreprise</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+								<div class="post-content media ">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve18.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal"> EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">The Gabonese Awards Of The Year 2e Edition</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve6.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal"> EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">Festival coup de Théatre</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve8.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal"> EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">Tremplin jeunes talents Musicaux</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve9.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal"> EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">Les Sambas Professionnels</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="{{asset('images/even/eve21.jpg')}}" alt="">
+									<div class="media-body">
+										<span class="post-tag">
+											<a href="#" class="dark" data-toggle="modal" data-target="#myModal">EVENEMENTS</a>
+										</span>
+										<h4 class="post-title">
+											<a href="#" data-toggle="modal" data-target="#myModal">GABON 9 Provinces</a>
+										</h4>
+									</div>
+								</div>
+								<!--post-content end-->
+							</div>
+							<!--ts-grid-box end -->
+						</div>
+						<!-- tab content end-->
+					</div>
+					<!-- col end-->
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 1-->
+
+
+		<!--Section 2-->
+		<section class="block-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4">
+						<div class="posts-ad">
+							<a href="index.html#">
+								<img src="images/banner/vignette.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- col end -->
+					<div class="col-lg-9 col-md-8">
+						<div class="ts-grid-box most-populer-item">
+							<h3 class="ts-title_index">LES DERNIERS APPELS À PROJETS PUBLIÉS</h3>
+
+							<div class="most-populers owl-carousel owl-loaded owl-drag">
+									 
+								<!-- ts-grid-box end-->
+								
+								<!-- ts-grid-box end-->
+								
+								<!-- ts-grid-box end-->
+								
+								<!-- ts-grid-box end-->
+								
+								<!-- ts-grid-box end-->
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-791px, 0px, 0px); transition: all 0s ease 0s; width: 2901px;"><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="concours_three.html">
+											<img class="img-fluid" src="images/even/e2.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="concours_three.html">Concours d'Art Oratoire</a>
+										</h3>
+										<strong class="date  text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="index.html#">
+											<img class="img-fluid" src="images/even/eve26.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="index.html#">Appel à candidatures pour le prix des éditeurs</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="index.html#">
+											<img class="img-fluid" src="images/even/actu1.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="index.html#">Prix jeune journaliste au Gabon.</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item active" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="concours_one.html">
+											<img class="img-fluid" src="images/even/continents.png" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="concours_one.html">Appel à candidatures pour le prix des éditeurs</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item active" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thub">
+										<a href="concours_two.html">
+											<img class="img-fluid" src="images/even/e9.png" alt="">
+										</a>
+									</div>
+									<div class="post-content p-3">
+										<h3 class="post-title">
+											<a href="concours_two.html">Prix jeune journaliste au Gabon.</a>
+										</h3>
+										<strong class="date  text-danger">Expire le 31/10/2020</strong>
+									</div>
+									
+								</div></div><div class="owl-item active" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="concours_three.html">
+											<img class="img-fluid" src="images/even/e2.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="concours_three.html">Concours d'Art Oratoire</a>
+										</h3>
+										<strong class="date  text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="index.html#">
+											<img class="img-fluid" src="images/even/eve26.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="index.html#">Appel à candidatures pour le prix des éditeurs</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="index.html#">
+											<img class="img-fluid" src="images/even/actu1.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="index.html#">Prix jeune journaliste au Gabon.</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="concours_one.html">
+											<img class="img-fluid" src="images/even/continents.png" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="concours_one.html">Appel à candidatures pour le prix des éditeurs</a>
+										</h3>
+										<strong class="date text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thub">
+										<a href="concours_two.html">
+											<img class="img-fluid" src="images/even/e9.png" alt="">
+										</a>
+									</div>
+									<div class="post-content p-3">
+										<h3 class="post-title">
+											<a href="concours_two.html">Prix jeune journaliste au Gabon.</a>
+										</h3>
+										<strong class="date  text-danger">Expire le 31/10/2020</strong>
+									</div>
+									
+								</div></div><div class="owl-item cloned" style="width: 233.667px; margin-right: 30px;"><div class="item">
+									<a class="post-cat bg-danger" href="index.html#">Appel à projet</a>
+									<div class="ts-post-thumb">
+										<a href="concours_three.html">
+											<img class="img-fluid" src="images/even/e2.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title">
+											<a href="concours_three.html">Concours d'Art Oratoire</a>
+										</h3>
+										<strong class="date  text-danger">Expire le 31/10/2020</strong>
+									</div>
+								</div></div></div></div><div class="owl-nav"><button role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
+							<!-- most-populers end-->
+						</div>
+						<!-- ts-populer-post-box end-->
+					</div>
+					<!-- col end-->
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 2-->
+
+
+
+		<!--Section 3-->
+		<section class="block-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="ts-grid-box watch-post mb-30">
+							<h3 class="ts-title_index">DÉRNIERES ACTUALITÉS</h3>
+							<div class="row">
+								<div class="col-lg-7">
+									<div class="tab-content featured-post" id="nav-tabContent">
+										<div class="tab-pane ts-overlay-style fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+											<div class="item" style="background-image: url(images/info/act23.jpg)">
+
+												<a class="post-cat gb-dark" href="publication.html">Actualités</a>
+												<a href="publication.html">
+												</a>
+												<div class="overlay-post-content">
+													<div class="post-content">
+														<h3 class="post-title md">
+															<a href="index-8.html#">Covid-19 : La vaste campagne gabonaise pour le port du masque</a>
+														</h3>
+														<ul class="post-meta-info">
+															<li class="author">
+																<a href="index-8.html#">
+																	<img src="images/avater/author.jpg" alt=""> Flore Pendy
+																</a>
+															</li>
+															<li>
+																<i class="fa fa-clock-o"></i>
+																10 Décembre 2019
+															</li>
+															<li class="active">
+																<i class="icon-fire"></i>
+																45
+															</li>
+														</ul>
+													</div>
+												</div>
+												<!-- overlay post content-->
+											</div>
+											<!-- item end-->
+										</div>
+									</div>
+								</div>
+								<!-- col end-->
+
+								<div class="col-lg-5">
+									<div class="nav post-list-box" id="nav-tab" role="tablist">
+										<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="index-8.html#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+											<div class="post-content media">
+												<img class="d-flex" src="images/info/actue29.jpg" alt="">
+												<div class="media-body align-self-center">
+													<h4 class="post-title">
+														Mr Jean Baptiste Lemoyne secrétaire d’Etat français auprès du ministre des Affaires Etrangères Visite l'ecole241
+													</h4>
+													<span class="post-date-info">
+														<i class="fa fa-clock-o"></i>
+														31 Décembre 2019
+													</span>
+												</div>
+											</div>
+										</a>
+										<!-- nav item end-->
+										<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="index-8.html#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+											<div class="post-content media">
+												<img class="d-flex" src="images/info/actue27.jpg" alt="">
+												<div class="media-body align-self-center">
+													<h4 class="post-title">
+														Atelier : À la découverte des épices Gabonaises – le bois d’ail
+													</h4>
+													<span class="post-date-info">
+														<i class="fa fa-clock-o"></i>
+														07 Octobre 2019
+													</span>
+												</div>
+											</div>
+										</a>
+										<!-- nav item end-->
+										<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="index-8.html#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+											<div class="post-content media">
+												<img class="d-flex" src="images/info/act1.jpg" alt="">
+												<div class="media-body align-self-center">
+													<h4 class="post-title">
+														DigieWomen School : Les femmes dans le digital pour un impact maximal
+													</h4>
+													<span class="post-date-info">
+														<i class="fa fa-clock-o"></i>
+														21 Décembre 2019
+													</span>
+												</div>
+											</div>
+										</a>
+										<!-- nav item end-->
+									</div>
+									<!-- watch list post end-->
+								</div>
+								<!-- col end -->
+							</div>
+							<!-- row end-->
+						</div>
+						<div class="ts-grid-box category-box-item-3">
+							<h3 class="ts-title_index float-left">LES EXPERTS DU MOMENT</h3>
+							<a href="index-8.html#" class="view-all-link float-right">Voir tous les esperts</a>
+							<div class="clearfix"></div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="item">
+										<div class="ts-post-thumb">
+											<a href="index-8.html#">
+												<img class="img-fluid" src="images/experts/tech7.png" alt="">
+											</a>
+										</div>
+										<div class="post-content">
+											<ul class="post-meta-info">
+												<li class="author">
+													<h3 class="post-title">
+														<a href="index-8.html#">Le docteur Nathalie Dupagne</a>
+													</h3>
+												</li>
+											</ul>
+											<p>
+												Le Docteur Nathalie DUPAGNE, gynécologue installée à Port-Gentil* depuis
+												bientôt 19 ans a crée l’ONG 3S en 2014. A travers cette ONG elle s’est
+												engagé dans la lutte contre les grossesses précoces ? le VIH et les IST. En
+												Septembre 2017 elle a ouvert un centre de plannification familliale. Experte
+												sur les....
+											</p>
+										</div>
+									</div>
+									<!-- ts-grid-box end-->
+								</div>
+								<!-- col end-->
+								<div class="col-lg-6">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="item mb-20">
+												<div class="ts-post-thumb">
+													<a href="index-8.html#">
+														<img class="img-fluid" src="images/experts/tech1.jpg" alt="">
+													</a>
+												</div>
+												<div class="post-content">
+													<h3 class="post-title">
+														<a href="index-8.html#">Jeff Boundamas</a>
+													</h3>
+												</div>
+											</div>
+										</div>
+										<!-- col end-->
+										<div class="col-lg-6">
+											<div class="item mb-20">
+												<div class="ts-post-thumb">
+													<a href="index-8.html#">
+														<img class="img-fluid" src="images/experts/tech2.png" alt="">
+													</a>
+												</div>
+												<div class="post-content">
+													<h3 class="post-title">
+														<a href="index-8.html#">Bienvenue Mbaiwodji</a>
+													</h3>
+												</div>
+											</div>
+										</div>
+										<!-- col end-->
+										<div class="col-lg-6">
+											<div class="item">
+												<div class="ts-post-thumb">
+													<a href="index-8.html#">
+														<img class="img-fluid" src="images/experts/tech5.jpg" alt="">
+													</a>
+												</div>
+												<div class="post-content">
+													<h3 class="post-title">
+														<a href="index-8.html#">Josiane MATENE</a>
+													</h3>
+												</div>
+											</div>
+										</div>
+										<!-- col end-->
+										<div class="col-lg-6">
+											<div class="item">
+												<div class="ts-post-thumb">
+													<a href="index-8.html#">
+														<img class="img-fluid" src="images/experts/tech3.png" alt="">
+													</a>
+												</div>
+												<div class="post-content">
+													<h3 class="post-title">
+														<a href="index-8.html#">Ménès NED.</a>
+													</h3>
+												</div>
+											</div>
+										</div>
+										<!-- col end-->
+									</div>
+								</div>
+							</div>
+							<!-- row end-->
+
+						</div>
+					</div>
+
+					
+					<div class="col-lg-3">
+						<div class="right-sidebar">
+							<div class="ts-grid-box widgets ts-social-list-item">
+								<h3 class="ts-title_index">Nous suivre</h3>
+								<ul class="sociaux">
+									<a href="https://www.votre_url.com" class="fa fa-facebook "></a>
+									<a href="https://www.votre_url.com" class="fa fa-linkedin"></a>
+									<a href="https://www.votre_url.com" class="fa fa-instagram"></a>
+								</ul>
+							</div>
+							<!-- widgets end-->
+
+							<div class="ts-grid-box widgets category-list-item">
+								<div class="pool-widget">
+									<h3 class="ts-title_index">Un renseignement?</h3>
+									<form role="form">
+										<div class="radio">
+											<label><input type="radio" name="optradio">Démarches Administratives</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" name="optradio">Démarches Juridiques</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" name="optradio">Démarches citoyennes</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" name="optradio">Démarches Associatives</label>
+										</div>
+									</form>
+									<div class="group ">
+										<a href="#" class="btn btn-primary">Soummetre</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="widgets ts-grid-box  widgets-populer-post">
+								<h3 class="widget-title">Publications populaires</h3>
+								<div class="ts-overlay-style">
+									<div class="item">
+										<div class="ts-post-thumb">
+											<a href="index-8.html#">
+												<img class="img-fluid" src="images/even/nathalie.png" alt="">
+											</a>
+										</div>
+										<div class="overlay-post-content">
+											<div class="post-content">
+												<h3 class="post-title">
+													<a href="index-8.html#">Sommet Afrique-France : la liste des entrepreneurs gabonais lauréats dévoilée
+													</a>
+												</h3>
+												<ul class="post-meta-info">
+													<li>
+														<i class="fa fa-clock-o"></i>
+														10 juin 2020
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ts-overlay-style  end-->
+
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="images/even/eve23.jpg" alt="">
+									<div class="media-body align-self-center">
+										<h4 class="post-title">
+											<a href="">l’approvisionnement en eau et l’assainissement en milieu rural au Gabon</a>
+										</h4>
+									</div>
+								</div>
+								<!-- post content end-->
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="images/even/eve26.jpg" alt="">
+									<div class="media-body align-self-center">
+										<h4 class="post-title">
+											<a href="">Introduction au Design Thinking - MasterClass by SING GA</a>
+										</h4>
+									</div>
+								</div>
+								<!-- post content end-->
+
+								<div class="post-content media">
+									<img class="d-flex sidebar-img" src="images/info/act1.jpg" alt="">
+									<div class="media-body align-self-center">
+										<h4 class="post-title">
+											<a href="">DigieWomen School: Les femmes dans le digital pour un impact maximal</a>
+										</h4>
+									</div>
+								</div>
+									<!-- post content end-->
+							</div>
+							
+						</div>
+					</div>
+					<!-- col end-->
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 3-->
+
+
+		<!--Section 4-->
+		<section class="block-wrapper mt-15 xs-mb-30">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="ts-grid-box clearfix ts-category-title">
+							<h2 class="ts-title float-left">LA UNE DES ACTIFS</h2>
+							<a href="#" class="view-all-link float-right" style="color: #d72924;">Voir tous les actifs</a>
+						</div>
+						<div class="row post-col-list-item">
+							<div class="col-lg-6 mb-30">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="index-8.html#">
+											<img class="img-fluid" src="images/actifs/travel.jpg" alt="acteurs de la sociétés civiles actifs">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title md">
+											<a href="index-8.html#">ONG ACTE</a>
+										</h3>
+										<ul class="post-meta-info">
+											<li class="author">
+												<a href="category-1.html#">
+													<img src="images/avater/author.jpg" alt=""> Fleur Pendie
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Jun 21, 2019
+											</li>
+											<li>
+												<a href="category-1.html#">
+													<i class="fa fa-comments"></i>
+													5 commentaires
+												</a>
+											</li>
+										</ul>
+										<p>Ce projet est le fruit d’un collectif de jeunes qui ont choisi de s’engager pour
+											changer les choses. Il a pour objectif la création d’une application dédiée aux
+											jeunes filles.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 mb-30">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="index-8.html#">
+											<img class="img-fluid" src="images/actifs/traval5.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title md">
+											<a href="index-8.html#">ONG OGOOUE LABS</a>
+										</h3>
+										<ul class="post-meta-info">
+											<li class="author">
+												<a href="category-1.html#">
+													<img src="images/avater/author2.jpg" alt="acteurs de la sociétés civiles actifs"> Emite Ndombi
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Jun 21, 2019
+											</li>
+											<li>
+												<a href="category-1.html#">
+													<i class="fa fa-comments"></i>
+													5 commentaires
+												</a>
+											</li>
+										</ul>
+										<p>Ce projet est le fruit d’un collectif de jeunes qui ont choisi de s’engager pour
+											changer les choses. Il a pour objectif la création d’une application dédiée aux
+											jeunes filles.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 mb-30">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="index-8.html#">
+											<img class="img-fluid" src="images/actifs/travel2.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title md">
+											<a href="index-8.html#">ASSOCIATION NGUDU</a>
+										</h3>
+										<ul class="post-meta-info">
+											<li class="author">
+												<a href="category-1.html#">
+													<img src="images/avater/author.jpg" alt=""> Cassandra Elat
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Jun 21, 2019
+											</li>
+											<li>
+												<a href="category-1.html#">
+													<i class="fa fa-comments"></i>
+													5 commentaires
+												</a>
+											</li>
+										</ul>
+										<p>Ce projet est le fruit d’un collectif de jeunes qui ont choisi de s’engager pour
+											changer les choses. Il a pour objectif la création d’une application dédiée aux
+											jeunes filles.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 mb-30">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="index-8.html#">
+											<img class="img-fluid" src="images/actifs/travel3.jpg" alt="">
+										</a>
+									</div>
+									<div class="post-content">
+										<h3 class="post-title md">
+											<a href="index-8.html#">Association We-need</a>
+										</h3>
+										<ul class="post-meta-info">
+											<li class="author">
+												<a href="category-1.html#">
+													<img src="images/avater/author2.jpg" alt=""> jean-Mathy Ndong
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-clock-o"></i>
+												Jun 21, 2019
+											</li>
+											<li>
+												<a href="category-1.html#">
+													<i class="fa fa-comments"></i>
+													5 commentaires
+												</a>
+											</li>
+										</ul>
+										<p>Ce projet est le fruit d’un collectif de jeunes qui ont choisi de s’engager pour
+											changer les choses. Il a pour objectif la création d’une application dédiée aux
+											jeunes filles.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<h3 class="widget-title">L’actualité des membres et partenaires</h3>
+						<div class="ts-grid-box ts-grid-content">
+							<div class="ts-post-thumb">
+								<a href="#">
+									<img class="img-fluid" src="images/actu/part1.jpg" alt="">
+								</a>
+							</div>
+							<div class="post-content">
+								<h3 class="post-title h1">
+									<a href="#">Engagez-vous pour les droits de l’enfant et l’égalité de genre&nbsp;!</a>
+								</h3>
+								<ul class="hashtags d-flex">
+									<li>
+										<a href="https://www.coordinationsud.org/theme/genre/" title="Voir tous les contenus associés à « Genre »">#&nbsp;Genre</a>
+									</li>
+									<li>
+										<a href="https://www.coordinationsud.org/theme/jeunesse/" title="Voir tous les contenus associés à « Jeunesse »">#&nbsp;Jeunesse</a>
+									</li>
+									<li>
+										<a href="https://www.coordinationsud.org/theme/appui-aux-ong/" title="Voir tous les contenus associés à « Appui aux ONG »">#&nbsp;Appui aux ONG</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+
+						<div class="ts-grid-box ts-grid-content">
+							<div class="ts-post-thumb">
+								<a href="#">
+									<img class="img-fluid" src="images/actu/part2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+						<div class="widgets widget-banner">
+							<a href="#">
+								<img class="img-fluid" src="images/banner/banner6.png" alt="">
+							</a>
+						</div>
+
+						<div class="ts-grid-box ts-grid-content">
+							<div class="ts-post-thumb">
+								<a href="#">
+									<img class="img-fluid" src="images/actu/part3.png" alt="">
+								</a>
+							</div>
+							<div class="post-content">
+								<h3 class="post-title">
+									<a href="#">Tournée consulaire à Port-Gentil les 30 septembre au 1er octobre 2020</a>
+								</h3>
+								<span class="post-date-info">
+									<i class="fa fa-clock-o"></i>
+									30 septembre au 1er octobre 2020
+								</span>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+
+						<div class="ts-grid-box ts-grid-content">
+							<div class="ts-post-thumb">
+								<a href="#">
+									<img class="img-fluid" src="images/actu/part4.jpg" alt="" height="400">
+								</a>
+							</div>
+							<!-- <div class="post-content" style="height: 10px;">
+								<span class="post-title text-center" style="font-size: 12px;">
+									<a href="#">COURS DE FRANCAIS</a>
+								</span>
+							</div>  -->
+						</div>
+						<!-- ts-grid-box end-->
+					</div>
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 4-->
+
+
+		<!--Section 5 -->
+		<section class="block-wrapper mt-15 xs-mb-30" id="block-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ts-grid-box clearfix ts-category-title">
+							<h3 class="ts-title float-left">LE CENTRE DE RECHERCHE ET ACTIONS EN CHIFFRES</h3>
+						</div>
+						<div class="row text-center">
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<div class="counter">
+									<h3 class="timer count-title count-number" data-to="100" data-speed="1500">100</h3>
+									<p class="count-text ">Acteurs repertoriés</p>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<div class="counter">
+									<h3 class="timer count-title count-number" data-to="1700" data-speed="1500">1,700</h3>
+									<p class="count-text ">Actions concrétisées</p>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<div class="counter">
+									<h3 class="timer count-title count-number" data-to="11900" data-speed="1500">11,900</h3>
+									<p class="count-text ">Événements organisés</p>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<div class="counter">
+									<h3 class="timer count-title count-number" data-to="157" data-speed="1500">157</h3>
+									<p class="count-text ">Appel à projets</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 5-->
+
+
+		<!--Section 6-->
+			<section class="block-wrapper" style="background-image:url(images/banner/banner-bg.png); background-attachment: fixed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ts-grid-box clearfix ts-category-title">
+							<h3 class="ts-title float-left">NOS PARTENAIRES</h3>
+						</div>
+						<div class="row">
+							<!-- col end-->
+							<div class="col-md-4">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="#">
+											<img class="img-fluid" src="images/logo/pa4.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<!-- ts grid box-->
+							</div>
+							<!-- col end-->
+							<div class="col-md-4">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="concours.html">
+											<img class="img-fluid" src="images/logo/pa1.jpg" alt="" width="300">
+										</a>
+									</div>
+								</div>
+								<!-- ts grid box-->
+							</div>
+							<!-- col end-->
+							<div class="col-md-4">
+								<div class="ts-grid-box ts-grid-content">
+									<div class="ts-post-thumb">
+										<a href="#">
+											<img class="img-fluid" src="images/logo/pa2.png" alt="">
+										</a>
+									</div>
+								</div>
+								<!-- ts grid box-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- row end-->
+			</div>
+			<!-- container end-->
+		</section>
+		<!--End Section 6-->
+
+		
+
+		<!--Section 7-->
+		<section class="block-wrapper mt-15 xs-mb-30" id="block-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<h3 class="widgets-title">
+								<span>Nos coordonnées</span>
+							</h3>
+							<div class="box">
+								<div class="box-text">
+									<p>409, Boulevard Triomphal - <br> BP 2125 - Libreville<br class="manualbr">Tél. (+241) 11 79 70 00 <br class="manualbr">
+										<a href="us-contact.html" class="spip_in">Nous contacter</a><br class="manualbr">
+										<a href="us-urgence.html" class="spip_in">En cas d’urgence</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+
+						<div class="col-lg-4">
+							<h3 class="widgets-title">
+								<span>Où nous trouver ?</span>
+							</h3>
+							<div class="ts-grid-box ts-grid-content">
+								<div class="ts-post-thumb">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.717423378212!2d9.436545114094308!3d0.4074750639933103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f3b75f010ded9%3A0x69580da1ca3b0c28!2sInstitut%20fran%C3%A7ais%20du%20Gabon!5e0!3m2!1sfr!2sga!4v1601039989462!5m2!1sfr!2sga" width="600" height="230" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+
+						<div class="col-lg-4">
+							<h3 class="widgets-title">
+								<span>Accès rapide</span>
+							</h3>
+							<div class="box">
+								<div class="box-text">
+									<ul>
+										<li><a class="link-type-01" href="Conseils-aux-voyageurs-749">Conseils aux voyageurs</a></li>
+											
+										<li><a class="link-type-01" href="Inscrivez-vous-au-Consulat">Inscrivez-vous au Consulat&nbsp;!</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ts-grid-box end-->
+					</div>
+					<!-- row end-->
+				</div>
+				<!-- container end-->
+		</section>
+		<!--End Section 7-->
+
+
+		
+
+		<!--Block Cookies-->
+			{% include "cookies.html.twig" %}
+
+		<!--End Block Cookies-->
 
 {% endblock %}

@@ -96,3 +96,54 @@ jQuery(function ($) {
 	$this.countTo(options);
   }
 });
+
+// Vue A propos
+
+
+$(function() {
+	$('.material-card > .mc-btn-action').click(function () {
+		var card = $(this).parent('.material-card');
+		var icon = $(this).children('i');
+		icon.addClass('fa-spin-fast');
+
+		if (card.hasClass('mc-active')) {
+			card.removeClass('mc-active');
+
+			window.setTimeout(function() {
+				icon
+					.removeClass('fa-arrow-left')
+					.removeClass('fa-spin-fast')
+					.addClass('fa-bars');
+
+			}, 800);
+		} else {
+			card.addClass('mc-active');
+
+			window.setTimeout(function() {
+				icon
+					.removeClass('fa-bars')
+					.removeClass('fa-spin-fast')
+					.addClass('fa-arrow-left');
+
+			}, 800);
+		}
+	});
+});
+
+
+// Vue Concours
+
+var acc = document.getElementsByClassName("accord");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("activ");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+}

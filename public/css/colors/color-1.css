@@ -10,7 +10,8 @@
 .nav-menu .megamenu-lists .megamenu-list > li > a:hover,
 .view-all-link:hover,
 .post-meta-info li.active{
-    color: #d72924;
+    color: #f94340;
+    ;
 }
 /*--- default primary background set----*/
 .top-bar .ts-date-item,
@@ -29,7 +30,8 @@
 .nav-menu > li > a:hover,
 .ts-title:before,
 .top-bar .top-social li.ts-subscribe{
-    background: #d72924;
+    background:#f94340;
+    ;
 }
 
 /*--- primary  dark color ---*/
@@ -37,7 +39,7 @@
 .widgets .ts-widget-newsletter .newsletter-form .btn,
 .header-standerd .nav-menu > li > a:hover,
 .top-bar.v2{
-    background: #c2211c;
+    background:#f94340;
 }
 /* hover text color  */
 .post-video .post-video-content h3 a:hover,

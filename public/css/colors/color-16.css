@@ -1,0 +1,74 @@
+/*
+Template Name: Bootstrap Service Section
+Author:  Abdullah Nahian
+Author URI:
+Version: 1.0
+
+====/========        ===== ==/====/
+             CSS Index
+====/========        =======/====/
+
+01. Common Css
+02. Section Title CSS
+03. Header Area CSS
+04. Slider Area CSS
+05. About Area CSS
+06. Service Area CSS
+07. Skill Area CSS
+08. Advertisement Area CSS
+09. Portfolio Area CSS
+10. Team Area CSS
+11. Counter Up Area CSS
+12. Price Area CSS
+13. Testimonial Area CSS
+14. Blog Area CSS
+15. Contact Area CSS
+16. Footer Area CSS
+
+*/
+
+/*
+* ----------------------------------------------------
+*   01. Reset CSS 
+* ----------------------------------------------------
+*/
+
+/* VUE APPEL A PROJET GENERAL */
+
+
+span{
+    font-size:15px;
+}
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+	margin:30px 0px;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.08);
+}
+.text{
+    margin:10px 0px;
+}
+
+.fa-3x{
+     color:#4183D7;
+}
+
+
+
+
+
+
+
+
+
+
+#newslatter{
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+}
