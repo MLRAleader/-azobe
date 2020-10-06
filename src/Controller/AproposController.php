@@ -3,24 +3,21 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AppelProjetController extends AbstractController
+class AproposController extends AbstractController
 {
     /**
-     * @Route("/appel/projet", name="appel_projet")
+     * @Route("/apropos", name="apropos")
      */
     public function index()
     {
-        
-        return $this->render('appel_projet/index.html.twig', [
-            'controller_name' => 'AppelProjetController',
+        return $this->render('apropos/index.html.twig', [
+            'controller_name' => 'AproposController',
         ]);
     }
 
-     /**
+    /**
      * @Route("/homepage", name="homepage")
      */
     public function homepage()

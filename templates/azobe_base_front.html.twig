@@ -171,8 +171,8 @@
 				<div class="row">
 					<div class="col-md-4  align-self-center d-flex">
 						<div class="header-logo"> 
-							<a href="index.html">
-								<img src="images/logo/azologo.png" alt="logo AZOBE" width="150px">
+							<a href="{{path('homepage')}}">
+								<img src="{{asset('images/logo/azologo.png')}}" alt="logo AZOBE" width="150px">
 							</a>
 						</div>
 					</div>
@@ -181,7 +181,7 @@
 					<div class="col-md-8 align-self-center">
 						<div class="banner-img">
 							<a href="#" data-toggle="modal" data-target="#exampleModal">
-								<img class="img-fluid" src="images/banner/banner12.jpg" alt="">
+								<img class="img-fluid" src="{{asset('images/banner/banner12.jpg')}}" alt="Bannière appel à projet">
 							</a>
 						</div>
 					</div>
@@ -203,7 +203,7 @@
 						<nav class="navigation ts-main-menu ts-menu-sticky navigation-landscape">
 							<div class="nav-header">
 								<a class="nav-brand mobile-logo visible-xs" href="index-2.html">
-									<img src="images/logo/ne1.png" alt="" width="120">
+									<img src="{{asset('images/logo/ne1.png')}}" alt="" width="120">
 								</a>
 								<div class="nav-toggle"></div>
 							</div>
@@ -213,7 +213,7 @@
 								<!--nav right menu start-->
 								<ul class="right-menu align-to-right">
 									<li>
-										<a href="connexion.html">
+										<a href="{{path('app_register')}}">
 											<i class="fa fa-user"></i>
 										</a>
 									</li>
@@ -236,20 +236,20 @@
 								<!-- nav menu start-->
 								<ul class="nav-menu">
 									<li class="active">
-										<a href="index.html">Accueil</a>
+										<a href="{{path('homepage')}}">Accueil</a>
 									</li>
 									<li class="">
-										<a href="apropos.html">à propos</a>
+										<a href="{{path('apropos')}}">à propos</a>
 									</li>
 									<li class="">
-										<a href="actualites.html">Actualités</a>
+										<a href="{{path('actualite')}}">Actualités</a>
 									</li>
 									
 									<li class="">
-										<a href="appel_projets.html">Appels à Projets</a>
+										<a href="{{path('appel_projet')}}">Appels à Projets</a>
 									</li>
 									<li class="">
-										<a href="events.html">Evenements</a>
+										<a href="{{path('evenement')}}">Evenements</a>
 									</li>
 								</ul>
 								<!--nav menu end-->
@@ -262,6 +262,10 @@
 		</header>
         
     {% block section %}{% endblock %}
+
+	{% block registration %}
+		
+	{% endblock %}
 
     {% block footer %} {% endblock %}
     <!--Section Newsletter-->
@@ -331,7 +335,7 @@
 					<div class="col-md-6">
 						<div class="copyright-text">
 							<p>©
-								<a href="#">Ecole {241}</a>.Tous droits réservés.
+								<a href="#">AZOBE.CRA.COM</a>.Tous droits réservés.
 							</p>
 						</div>
 					</div>
