@@ -2,21 +2,69 @@
 
 {% block title %}Reset your password{% endblock %}
 
-{% block body %}
-    {% for flashError in app.flashes('reset_password_error') %}
-        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-    {% endfor %}
-    <h1>Reset your password</h1>
+{% block section %}
 
-    {{ form_start(requestForm) }}
-        {{ form_row(requestForm.email) }}
-        <div>
-            <small>
-                Enter your email address and we we will send you a
-                link to reset your password.
-            </small>
-        </div>
 
-        <button class="btn btn-primary">Send password reset email</button>
-    {{ form_end(requestForm) }}
+
+
+    <section class="block-wrapper section-bg">
+
+            {# Message d'erreur #}
+            {% for flashError in app.flashes('verify_email_error') %}
+            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+            {% endfor %}
+            {# End Message d'erreur #}
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 mx-auto">
+						<div class="ts-grid-box">
+							<div class="login-page">
+								<h6 class="log-sign-title text-center mb-20">Se connecter ou <a href="{{path('app_register')}}">Créer un compte ?</a></h6>
+							
+								{# <div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+									<a href="#" class="btn btn-lg btn-primary btn-fb btn-block">Facebook</a>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+									<a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+									</div>
+								</div><!-- row end --> #}
+							<div class="login-or">
+								<hr class="hr-or">
+								<span class="span-or">ou</span>
+							</div>
+								{# L'endroit pour insérer le code #}
+								
+                                        {% for flashError in app.flashes('reset_password_error') %}
+                                         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+                                        {% endfor %}
+                                        <h2>Réinitialisez votre mot de passe</h2>
+
+                                        {{ form_start(requestForm) }}
+                                            {{ form_row(requestForm.email) }}
+                                            <div>
+                                                <small>
+                                                    <strong>Enter your email address and we we will send you a
+                                                    link to reset your password.</strong>
+                                                </small>
+                                            </div>
+
+                                            <button class="btn btn-primary">Envoyez l'email de réinitialisation</button>
+                                        {{ form_end(requestForm) }}
+                                                                    {# L'endroit pour insérer le code #}
+                                                                
+                                                            </div>
+                                                        </div><!-- grid box end -->
+                                                    </div>
+                                                    <!-- col end-->
+
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+		<!-- container end-->
+	</section>
+        {# End Code du bon formulaire #}
+
+    
 {% endblock %}

@@ -52,7 +52,7 @@ class RegistrationController extends AbstractController
                 (new TemplatedEmail())
                     ->from(new Address('admin@azobe.cra.com', 'Centre de Recherche et Action'))
                     ->to($user->getEmail())
-                    ->subject('Please Confirm your Email')
+                    ->subject('S\'il vous plait confirmez votre email')
                     ->htmlTemplate('registration/confirmation_email.html.twig')
             );
             // do anything else you need here, like send an email

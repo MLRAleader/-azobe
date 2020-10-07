@@ -5,46 +5,76 @@
 {% block registration %}
 
         {# Code du bon formulaire #}
-
-        <section class="block-wrapper section-bg">
-
-            {# Message d'erreur #}
-            {% for flashError in app.flashes('verify_email_error') %}
-            <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-            {% endfor %}
-            {# End Message d'erreur #}
-
+			
+		<section class="block-wrapper shadow-lg">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 mx-auto">
+					<div class="col-lg-6 mx-auto">
+
 						<div class="ts-grid-box">
-							<div class="login-page">
-								<h6 class="log-sign-title text-center mb-20">Se connecter ou <a href="{{path('app_register')}}">Créer un compte ?</a></h6>
-							
-								<div class="row">
-									<div class="col-xs-6 col-sm-6 col-md-6">
-									<a href="#" class="btn btn-lg btn-primary btn-fb btn-block">Facebook</a>
-									</div>
-									<div class="col-xs-6 col-sm-6 col-md-6">
-									<a href="#" class="btn btn-lg btn-info btn-block">Google</a>
-									</div>
-								</div><!-- row end -->
-							<div class="login-or">
-								<hr class="hr-or">
-								<span class="span-or">ou</span>
-							</div>
+							<div class="reg-page">
+								<h3 class="log-sign-title mb-25 text-danger text-center">Inscrivez vous s'il vous plait 
+									<i class="fa fa-edit text-danger" aria-hidden="true"></i></h3>
+								<form>
+									<i class="fa fa-user-edit text-danger"></i>
+									<div class="form-row">
+										<div class="col form-group">
+											<label>Prénom</label>   
+												<input type="text" class="form-control" placeholder="">
+										</div> <!-- form-group end.// -->
+										<div class="col form-group">
+											<label>Nom de famille</label>
+												<input type="text" class="form-control" placeholder=" ">
+										</div> <!-- form-group end.// -->
+									</div> <!-- form-row end.// -->
+									<div class="form-group">
+										<label>Adresse électronique</label>
+										<input type="email" class="form-control" placeholder="">
+										<small class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec qui que ce soit.</small>
+									</div> <!-- form-group end.// -->
 
-							
-						</div>
-					</div><!-- grid box end -->
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label>Ville</label>
+											<input type="text" class="form-control">
+										</div> <!-- form-group end.// -->
+										<div class="form-group col-md-6">
+											<label>Pays</label>
+											<select id="inputState" class="form-control">
+											<option> Choose...</option>
+												<option>Gabon</option>
+												<option>Congo</option>
+												<option selected="">United States</option>
+												<option>India</option>
+												<option>Afganistan</option>
+											</select>
+										</div> <!-- form-group end.// -->
+									</div> <!-- form-row.// -->
+									<div class="form-group">
+										<label>Mot de passe</label>
+										<input class="form-control" type="password">
+									</div> <!-- form-group end.// -->  
+									<div class="form-group">
+											<label>Confirmez le mot de passe</label>
+											<input class="form-control" type="password">
+										</div> <!-- form-group end.// --> 
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary btn-block">  S'inscrire  </button>
+									</div> <!-- form-group// -->      
+									<small class="text-muted">En cliquant sur le bouton «S'inscrire», vous confirmez que vous acceptez nos conditions d'utilisation et notre politique de confidentialité.</small>                                          
+								</form>
+									<div class="border-top card-body text-center">Avez-vous déjà un compte? <a href="connexion.html">Se connecter</a></div>
+							</div> <!-- card.// -->
+
+						</div><!-- grid box end -->
+					</div>
+					<!-- col end-->
 				</div>
-				<!-- col end-->
-
+				<!-- row end-->
 			</div>
-			<!-- row end-->
-		</div>
-		<!-- container end-->
-	</section>
+			<!-- container end-->
+		</section>
+       
         {# End Code du bon formulaire #}
 
 		{# <form role="form">
