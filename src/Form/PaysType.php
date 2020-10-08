@@ -2,31 +2,24 @@
 
 namespace App\Form;
 
-use App\Entity\User;
+use App\Entity\Pays;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UserType extends AbstractType
+class PaysType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            // // ->add('prenom')
-            // ->add('nom_famille')
-            // ->add('ville')
-            ->add('email')
-            ->add('roles')
-            ->add('password')
-            // ->add('$confirm_password')
-            ->add('isVerified')
+            ->add('nom')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => User::class,
+            'data_class' => Pays::class,
         ]);
     }
 }
