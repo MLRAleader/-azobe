@@ -21,5 +21,5 @@ class PaysType extends AbstractType
         $resolver->setDefaults([
             'data_class' => Pays::class,
         ]);
-    }
+    }   
 }

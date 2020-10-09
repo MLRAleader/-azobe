@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be4cc6c000d22a873c1027209b0f024a",
+    "content-hash": "d143ae5bfda70a1f1e130b12fd50a250",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4174,7 +4174,7 @@
         },
         {
             "name": "symfony/intl",
-            "version": "v5.1.6",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",

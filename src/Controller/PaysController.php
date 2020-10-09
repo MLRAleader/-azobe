@@ -20,11 +20,17 @@ class PaysController extends AbstractController
      */
     public function index(PaysRepository $paysRepository): Response
     {
+
+        /**La méthode que j'ajoute pour récuperer les pays */
+            // $pays = $this->getDoctrine()->getRepository('App\Entity\Pays')->fin;
+        /**End La méthode que j'ajoute pour récuperer les pays */
+
         return $this->render('pays/index.html.twig', [
             'pays' => $paysRepository->findAll(),
         ]);
     }
 
+    
     /**
      * @Route("/new", name="pays_new", methods={"GET","POST"})
      */
