@@ -27,7 +27,7 @@ class RegistrationFormType extends AbstractType
             ->add('nom_famille')
             ->add('ville')
             ->add('pays', CountryType::class)
-            ->add('confirm_password')
+            ->add('confirm_password',PasswordType::class)
             ->add('email')
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
