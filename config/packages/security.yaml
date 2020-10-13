@@ -25,6 +25,8 @@ security:
             guard:
                 authenticators:
                     - App\Security\LoginFormAuthenticator
+                    - App\Security\AdminFormAuthenticator
+                entry_point: App\Security\AdminFormAuthenticator
             logout:
                 path: app_logout
                 # where to redirect after logout
@@ -41,5 +43,7 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-         - { path: ^/admin, roles: ROLE_ADMIN }
-         - { path: ^/profile, roles: ROLE_USER }
+         - { path: '^/admin', roles: ROLE_ADMIN }
+         - { path: '^/api/(post|comment)/\d+$', roles: ROLE_USER } # (this one will match URLs like /api/post/7298 and /api/comment/528491)
+          # matches /admin/users/*
+         - { path: '^/admin/user', roles: ROLE_SUPER_ADMIN }

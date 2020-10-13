@@ -21,7 +21,7 @@ class DashboardController extends AbstractDashboardController
      */
     public function index(): Response
     {
-        return parent::index();
+        return $this->render('bundles/EasyAdminBundle/welcome.html.twig', ['user']);
     }
 
     /**Costomise user interface */
